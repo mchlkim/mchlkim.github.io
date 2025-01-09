@@ -15,7 +15,8 @@ Amazon EKS 클러스터를 생성할 때 클러스터 엔드포인트 액세스 
 
 #### 1. Public Endpoint
 
-![alt text](/assets/img/posts/2025-01-06-Amazon_EKS_Endpoint_Type/public-endpoint.png)
+![alt text](/assets/img/posts/2025-01-06-Amazon_EKS_Endpoint_Type/public-endpoint.png){: .light}
+![alt text](/assets/img/posts/2025-01-06-Amazon_EKS_Endpoint_Type/public-endpoint-dark.png){: .dark}
 
 사용자는 인터넷에서 클러스터 API 서버에 접근할 수 있다.
 VPC 내에서는 데이터 플레인의 서브넷에서 인터넷이 가능하도록 Nat Gateway 구성이 필수이다.
@@ -30,7 +31,8 @@ CIDR은 최대 40개까지 추가할 수 있다.
 
 #### 2. Private Endpoint
 
-![alt text](/assets/img/posts/2025-01-06-Amazon_EKS_Endpoint_Type/private-endpoint.png)
+![alt text](/assets/img/posts/2025-01-06-Amazon_EKS_Endpoint_Type/private-endpoint.png){: light}
+![alt text](/assets/img/posts/2025-01-06-Amazon_EKS_Endpoint_Type/private-endpoint-dark.png){: dark}
 
 프라이빗 엔드포인트로 설정하면 `EKS OWNED ENI`를 통한 접근만 허용된다.
 
@@ -51,7 +53,8 @@ VPC 환경에서 인터넷 게이트웨이를 사용하지 않다면 VPC 엔드�
 
 #### 3. Public and Private Endpoint
 
-![alt text](/assets/img/posts/2025-01-06-Amazon_EKS_Endpoint_Type/public-and-private-endpoint.png)
+![alt text](/assets/img/posts/2025-01-06-Amazon_EKS_Endpoint_Type/public-and-private-endpoint.png){: .light}
+![alt text](/assets/img/posts/2025-01-06-Amazon_EKS_Endpoint_Type/public-and-private-endpoint-dark.png){: .dark}
 
 퍼블릭&프라이빗 엔드포인트는 위에서 설명한 퍼블릭, 프라이빗 엔드포인트가 통합된 형태로 이해하면 된다.
 

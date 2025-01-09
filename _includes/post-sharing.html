@@ -1,52 +1,37 @@
 <!-- Post sharing snippet -->
 
-<div class="share-wrapper d-flex align-items-center">
-  <span class="share-label text-muted">{{ site.data.locales[include.lang].post.share }}</span>
+<div class="share-wrapper">
+  <span class="share-label text-muted me-1"
+    >{{ site.data.locales[lang].post.share }}</span
+  >
   <span class="share-icons">
-    {% capture title %}{{ page.title }} - {{ site.title }}{% endcapture %}
-    {% assign title = title | uri_escape %}
-    {% assign url = page.url | absolute_url | url_encode %}
+    <!-- X (Twitter)
+    <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ url }}" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" target="_blank" rel="noopener" aria-label="Twitter">
+      <i class="fa-brands fa-square-x-twitter"></i>
+    </a>
+    -->
 
-    {% for share in site.data.share.platforms -%}
-      {%- capture tooltip -%}
-        data-bs-toggle="tooltip" data-bs-placement="top" title="{{ share.type }}" aria-label="{{ share.type }}"
-      {%- endcapture -%}
+    <!-- Facebook
+    <a href="https://www.facebook.com/sharer/sharer.php?title={{ page.title }}&u={{ url }}" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" target="_blank" rel="noopener" aria-label="Facebook">
+      <i class="fa-brands fa-square-facebook"></i>
+    </a>
+    -->
 
-      {% if share.type == 'Mastodon' %}
-        <script defer type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/share-to-mastodon/+esm"></script>
-        <button class="btn text-start" {{ tooltip }}>
-          <share-to-mastodon
-            class="share-mastodon"
-            message="{{ title }}"
-            url="{{ url }}"
-            {%- if share.instances -%}
-              customInstanceList="{{ share.instances | jsonify | xml_escape }}"
-            {%- endif %}
-          >
-            <i class="fa-fw {{ share.icon }}"></i>
-          </share-to-mastodon>
-        </button>
+    <!-- Telegram
+    <a href="https://t.me/share/url?url={{ url }}&text={{ page.title }}" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" target="_blank" rel="noopener" aria-label="Telegram">
+      <i class="fa-brands fa-telegram"></i>
+    </a>
+    -->
 
-        {% continue %}
-      {% endif %}
-
-      {% assign link = share.link | replace: 'TITLE', title | replace: 'URL', url %}
-
-      <a href="{{ link }}" target="_blank" rel="noopener" {{ tooltip }}>
-        <i class="fa-fw {{ share.icon }}"></i>
-      </a>
-    {% endfor %}
-
-    <button
-      id="copy-link"
-      aria-label="Copy link"
-      class="btn small"
+    <!-- Email -->
+    <a
+      href="mailto:?subject={{ page.title }}&body=Check out this link: {{ url }}"
       data-bs-toggle="tooltip"
       data-bs-placement="top"
-      title="{{ site.data.locales[include.lang].post.button.share_link.title }}"
-      data-title-succeed="{{ site.data.locales[include.lang].post.button.share_link.succeed }}"
+      title="Email"
+      aria-label="Email"
     >
-      <i class="fa-fw fas fa-link pe-none fs-6"></i>
-    </button>
+      <i class="fa-regular fa-envelope"></i>
+    </a>
   </span>
 </div>

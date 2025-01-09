@@ -5,36 +5,6 @@
     >{{ site.data.locales[lang].post.share }}</span
   >
   <span class="share-icons">
-    <!-- X (Twitter)
-    <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ url }}" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" target="_blank" rel="noopener" aria-label="Twitter">
-      <i class="fa-brands fa-square-x-twitter"></i>
-    </a>
-    -->
-
-    <!-- Facebook
-    <a href="https://www.facebook.com/sharer/sharer.php?title={{ page.title }}&u={{ url }}" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" target="_blank" rel="noopener" aria-label="Facebook">
-      <i class="fa-brands fa-square-facebook"></i>
-    </a>
-    -->
-
-    <!-- Telegram
-    <a href="https://t.me/share/url?url={{ url }}&text={{ page.title }}" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" target="_blank" rel="noopener" aria-label="Telegram">
-      <i class="fa-brands fa-telegram"></i>
-    </a>
-    -->
-
-    <!-- Email -->
-    {% assign email_title = page.title | url_encode %} {% assign email_url = url
-    | url_encode %}
-
-    <a
-      href="mailto:?subject={{ email_title }}&body=Check out this link: {{ email_url }}"
-      data-bs-toggle="tooltip"
-      data-bs-placement="top"
-      title="Email"
-      aria-label="Email"
-    >
-      <i class="fa-regular fa-envelope"></i>
-    </a>
+    <!-- 모든 공유 버튼 제거 -->
   </span>
 </div>

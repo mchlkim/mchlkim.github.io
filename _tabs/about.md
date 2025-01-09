@@ -9,7 +9,7 @@ order: 4
 <!-- https://github.com/tandpfun/skill-icons#readme -->
 
 # Certificates
-![Desktop View](../assets/img/certificate/aws-sap.png){: width="64" height="64" style="float: left;"}
+![Desktop View](../assets/img/certificate/aws-sap.png){: width="64" height="64" .normal}
 
 # Cloud Providers
 [![My Skills](https://skillicons.dev/icons?i=aws)](https://skillicons.dev)

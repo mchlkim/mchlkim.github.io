@@ -24,8 +24,11 @@
     -->
 
     <!-- Email -->
+    {% assign email_title = page.title | url_encode %} {% assign email_url = url
+    | url_encode %}
+
     <a
-      href="mailto:?subject={{ page.title }}&body=Check out this link: {{ url }}"
+      href="mailto:?subject={{ email_title }}&body=Check out this link: {{ email_url }}"
       data-bs-toggle="tooltip"
       data-bs-placement="top"
       title="Email"

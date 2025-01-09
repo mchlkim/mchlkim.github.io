@@ -10,7 +10,7 @@ order: 4
 
 # Certificates
 
-![Desktop View](../assets/img/certificate/aws-sap.png){: width="64" height="64" .normal}0
+![Desktop View](../assets/img/certificate/aws-sap.png){: width="48" height="48" .normal}
 
 # Cloud Providers
 

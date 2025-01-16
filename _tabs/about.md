@@ -32,7 +32,7 @@ order: 4
 
 # Tools
 
-[![My Skills](https://skillicons.dev/icons?i=docker,kubernetes,prometheus,grafana,elasticsearch)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=terraform,docker,kubernetes,prometheus,grafana,elasticsearch,git,idea)](https://skillicons.dev)
 
 # Scripting
 

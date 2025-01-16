@@ -117,13 +117,15 @@ Resource는 위에서 생성한 S3 버킷 arn을 지정한다.
 | RAW  | 블록 디바이스 이미지                      | 클라우드 및 온프레미스에서 직접 사용하거나 QEMU/KVM과 같은 환경에서 사용 |
 | VHD  | Microsoft Hyper-V 가상 머신 디스크 이미지 | Hyper-V 환경으로 마이그레이션 또는 Azure 클라우드에서 사용               |
 
-export-image
+###### export-image 명령어 실행
+
+VMDK를 사용해서 VMWare에서 사용 가능한 이미지를 내보내기한다.
 
 ```bash
 aws ec2 export-image --image-id <ami-id> --disk-image-format VMDK --s3-export-location S3Bucket=<vmimport-123456789012>,S3Prefix=export/ --region <region>
 ```
 
-출력 결과
+###### 출력 결과
 
 ```json
 {
@@ -140,13 +142,13 @@ aws ec2 export-image --image-id <ami-id> --disk-image-format VMDK --s3-export-lo
 }
 ```
 
-진행률 확인
+###### 진행률 확인
 
 ```bash
 aws ec2 describe-export-image-tasks --export-image-task-ids export-ami-abcd1234 --region <region>
 ```
 
-출력 결과
+###### 출력 결과
 
 ```json
 {

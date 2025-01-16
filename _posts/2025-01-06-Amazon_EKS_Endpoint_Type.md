@@ -62,5 +62,5 @@ VPC 환경에서 인터넷 게이트웨이를 사용하지 않다면 VPC 엔드�
 
 ## Ref.
 
-[^1]: https://docs.aws.amazon.com/ko_kr/eks/latest/userguide/cluster-endpoint.html
-[^2]: https://docs.aws.amazon.com/ko_kr/eks/latest/userguide/private-clusters.html
+[^1]: [클러스터 API 서버 엔드포인트에 대한 네트워크 액세스 제어](https://docs.aws.amazon.com/ko_kr/eks/latest/userguide/cluster-endpoint.html)
+[^2]: [프라이빗 클러스터 구성](https://docs.aws.amazon.com/ko_kr/eks/latest/userguide/private-clusters.html)

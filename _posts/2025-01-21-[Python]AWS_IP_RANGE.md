@@ -9,9 +9,9 @@ tags: [AWS, Python] # TAG names should always be lowercase
 
 AWS 서비스에서 사용되는 퍼블릭 엔드포인트의 경우 여러 이유로 변동이 될 수 있다.
 
-이로 인해 AWS에서 json 형태로 제공하지만 Python 코드를 사용해서 목록을 볼 수 있거나 코드 내에서 함수를 사용하여 좀 더 유연하게 사용이 가능하다.
+이로 인해 AWS에서 json[^1]으로 제공하지만 Python 코드를 사용해서 목록을 볼 수 있거나 코드 내에서 함수를 사용하여 좀 더 유연하게 사용이 가능하다.
 
-## 패키지 설치[^1]
+## 패키지 설치[^2]
 
 아래 명령어를 사용해서 python 패키지를 설치한다.
 
@@ -88,4 +88,5 @@ print(res)
 
 ## Ref.
 
-[^1]: [AWSIPRange 문서](https://aws-samples.github.io/awsipranges/index.html)
+[^1]: [AWS IP Range Json](https://aws-samples.github.io/awsipranges/index.html)
+[^2]: [AWSIPRange 패키지 문서](https://github.com/aws-samples/awsipranges)

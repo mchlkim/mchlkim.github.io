@@ -27,7 +27,7 @@ SteamCMD 폴더 내에 `install.bat` 파일 생성
 
 `우클릭 - 편집`을 눌러 파일 내용을 다음과 같이 작성한다.
 
-```bat
+```install.bat
 steamcmd.exe +login anonymous +app_update 380870 +quit
 ```
 
@@ -118,5 +118,5 @@ server_browser_announced_ip=<public_ip>
 ## Ref.
 
 [^1]: [SteamCMD 다운로드](https://steamcdn-a.akamaihd.net/client/installer/steamcmd.zip)
-[^2]: [My Ip](https://www.myip.com/)
+[^2]: [My Ip.com](https://www.myip.com/)
 [^3]: [Zomboid Dedicated server](https://pzwiki.net/wiki/Dedicated_server)

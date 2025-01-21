@@ -44,11 +44,13 @@ install.bat을 클릭하여 실행하면 좀보이드 서버 파일이 다운로
 
 메모리가 부족한 경우 Out of Memory 오류가 발생할 수 있으므로 추가적으로 메모리를 할당하거나 메모리 사용량을 줄여야 한다.
 
-```install.bat
+```bat
 ...
 -Xms12g -Xmx12g
 ...
 ```
+
+{: file='install.bat'}
 
 `StartServer64.bat`을 클릭하여 실행하면 좀보이드 서버가 구동된다.
 
@@ -86,10 +88,12 @@ install.bat을 클릭하여 실행하면 좀보이드 서버 파일이 다운로
 
 브라우저에서 [공인 아이피 주소 확인](https://www.myip.com/)[^2]로 접속하여 내 아이피 주소를 확인한다.
 
-```server.ini
+```ini
 # 위에서 확인한 공인 아이피 주소를 입력
 server_browser_announced_ip=<public_ip>
 ```
+
+{: file='server.ini'}
 
 위와 같이 설정하게 된다면 게임 내에서 접속이 가능하다.
 

@@ -1,5 +1,5 @@
 ---
-title: AMI VM 이미지 내보내기
+title: AWS AMI VM 이미지 내보내기
 date: 2025-01-10 12:00:00 +0900
 categories: [AWS, EC2, EBS]
 tags: [AMI, VM] # TAG names should always be lowercase

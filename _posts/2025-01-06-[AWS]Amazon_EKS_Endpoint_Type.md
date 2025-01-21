@@ -1,7 +1,7 @@
 ---
 title: Amazon EKS Cluster Endpoint 유형
 date: 2025-01-09 12:00:00 +0900
-categories: [DevOps, Container, Kubernetes]
+categories: [AWS, Container, Kubernetes]
 tags: [Container, Kubernetes, k8s, Amazon EKS, EKS, Endpoint] # TAG names should always be lowercase
 ---
 

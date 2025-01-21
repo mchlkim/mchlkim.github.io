@@ -10,10 +10,15 @@ category | first %} {% assign posts_of_category = category | last %} {% assign
 first_post = posts_of_category | first %} {% if category_name ==
 first_post.categories[0] %} {% assign sub_categories = '' | split: '' %} {%
 assign third_categories = '' | split: '' %} {% for post in posts_of_category %}
-{% assign second_category = post.categories[1] %} {% assign third_category =
-post.categories[2] %} {% if second_category %} {% unless sub_categories contains
-second_category %} {% assign sub_categories = sub_categories | push:
-second_category %} {% endunless %} {% endif %} {% if third_category %} {% unless
+{% assign post_categories = post.categories %} {% if post_categories[0] ==
+category_name %}
+<!-- 첫 번째 카테고리가 일치하는 경우만 -->
+{% assign second_category = post_categories[1] %} {% if second_category %} {%
+unless sub_categories contains second_category %} {% if second_category ==
+sub_category %}
+<!-- 두 번째 카테고리가 현재 서브카테고리와 일치하는 경우만 -->
+{% assign sub_categories = sub_categories | push: second_category %} {% endif %}
+{% endunless %} {% endif %} {% endif %} {% if third_category %} {% unless
 third_categories contains third_category %} {% assign third_categories =
 third_categories | push: third_category %} {% endunless %} {% endif %} {% endfor
 %} {% assign sub_categories = sub_categories | sort %} {% assign

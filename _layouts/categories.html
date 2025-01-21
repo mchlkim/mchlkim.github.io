@@ -14,16 +14,13 @@ assign third_categories = '' | split: '' %} {% for post in posts_of_category %}
 category_name %}
 <!-- 첫 번째 카테고리가 일치하는 경우만 -->
 {% assign second_category = post_categories[1] %} {% if second_category %} {%
-unless sub_categories contains second_category %} {% if second_category ==
-sub_category %}
-<!-- 두 번째 카테고리가 현재 서브카테고리와 일치하는 경우만 -->
-{% assign sub_categories = sub_categories | push: second_category %} {% endif %}
-{% endunless %} {% endif %} {% endif %} {% if third_category %} {% unless
-third_categories contains third_category %} {% assign third_categories =
-third_categories | push: third_category %} {% endunless %} {% endif %} {% endfor
-%} {% assign sub_categories = sub_categories | sort %} {% assign
-third_categories = third_categories | sort %} {% assign sub_categories_size =
-sub_categories | size %}
+unless sub_categories contains second_category %} {% assign sub_categories =
+sub_categories | push: second_category %} {% endif %} {% endif %} {% if
+third_category %} {% unless third_categories contains third_category %} {%
+assign third_categories = third_categories | push: third_category %} {%
+endunless %} {% endif %} {% endfor %} {% assign sub_categories = sub_categories
+| sort %} {% assign third_categories = third_categories | sort %} {% assign
+sub_categories_size = sub_categories | size %}
 
 <div class="card categories">
   <!-- top-category -->

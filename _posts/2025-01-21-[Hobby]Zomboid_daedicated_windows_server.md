@@ -119,3 +119,4 @@ server_browser_announced_ip=<public_ip>
 
 [^1]: [SteamCMD 다운로드](https://steamcdn-a.akamaihd.net/client/installer/steamcmd.zip)
 [^2]: [My Ip](https://www.myip.com/)
+[^3]: [Zomboid Dedicated server](https://pzwiki.net/wiki/Dedicated_server)

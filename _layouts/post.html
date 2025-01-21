@@ -59,7 +59,7 @@ script_includes:
           <em>
             {% if authors %} {% for author in authors %} {% if
             site.data.authors[author].url -%}
-            <a href="{{ site.data.authors[author].url }}"
+            <a href="{{ site.data.authors[author].url }}" target="_blank"
               >{{ site.data.authors[author].name }}</a
             >
             {%- else -%} {{ site.data.authors[author].name }} {%- endif %} {%
@@ -67,7 +67,9 @@ script_includes:
           >,
           <em
             >' }}{% endunless %} {% endfor %} {% else %}
-            <a href="{{ site.social.links[0] }}">{{ site.social.name }}</a>
+            <a href="{{ site.social.links[0] }}" target="_blank"
+              >{{ site.social.name }}</a
+            >
             {% endif %}
           </em>
         </span>
@@ -178,3 +180,14 @@ script_includes:
   </div>
   <!-- div.post-tail-wrapper -->
 </article>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const links = document.querySelectorAll('a[href^="http"]');
+    links.forEach((link) => {
+      if (!link.href.includes(window.location.hostname)) {
+        link.setAttribute("target", "_blank");
+      }
+    });
+  });
+</script>

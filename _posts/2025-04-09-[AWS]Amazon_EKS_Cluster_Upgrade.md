@@ -7,7 +7,7 @@ tags: [Container, Kubernetes, k8s, Amazon EKS, EKS, Upgrade]
 
 ## 개요
 
-Kubernetes는 평균 4개월에 한 번씩 새로운 마이너 버전을 릴리스[^8]하고 Amazon EKS는 이러한 마이너 버전의 업스트림 릴리스 및 지원 중단 주기를 따른다.
+Kubernetes는 평균 4개월에 한 번씩 새로운 마이너 버전을 릴리스[^1]하고 Amazon EKS는 이러한 마이너 버전의 업스트림 릴리스 및 지원 중단 주기를 따른다.
 이로 인해 마이너 버전 릴리스 후 14개월 동안 Amazon EKS의 표준 지원이 제공되고 이후 12개월 동안은 확장 지원으로 전환된다. 확장 지원 기간에는 클러스터 시간당 추가 비용을 지불해야 한다.
 물론 확장 지원 여부를 설정할 수는 있지만, 기본적으로 활성화되어 있으며 확장 지원도 12개월 동안만 지원되기 때문에 업그레이드 작업은 피할 수 없다.
 
@@ -15,12 +15,12 @@ Kubernetes는 평균 4개월에 한 번씩 새로운 마이너 버전을 릴리�
 
 ### 업그레이드 고려사항
 
-1. 버전 차이 정책[^1]
-2. Kubernetes 변경 내역[^2]
-3. 컨트롤 플레인 로깅 활성화[^3]
-4. Amazon EKS 변경 내역[^4]
-5. Amazon EKS 추가 기능[^5]
-6. Amazon EKS 네트워크[^6][^7]
+1. 버전 차이 정책[^2]
+2. Kubernetes 변경 내역[^3]
+3. 컨트롤 플레인 로깅 활성화[^4]
+4. Amazon EKS 변경 내역[^5]
+5. Amazon EKS 추가 기능[^6]
+6. Amazon EKS 네트워크[^7][^8]
 
 ---
 
@@ -99,11 +99,11 @@ AWS에서 제공하는 추가 기능에서는 대부분 업데이트 버전 정�
 
 ## Ref.
 
-[^1]: [Kubernetes 버전 차이 정책](https://github.com/kubernetes/kubernetes/tree/master/CHANGELOG)
-[^2]: [Kubernetes 변경 내역](https://github.com/kubernetes/kubernetes/tree/master/CHANGELOG)
-[^3]: [Amazon EKS 컨트럴 플레인 로깅](https://docs.aws.amazon.com/ko_kr/eks/latest/userguide/control-plane-logs.html)
-[^4]: [Amazon EKS 변경 내역](https://docs.aws.amazon.com/ko_kr/eks/latest/userguide/kubernetes-versions-standard.html)
-[^5]: [Amazon EKS 추가 기능](https://docs.aws.amazon.com/ko_kr/eks/latest/userguide/eks-add-ons.html)
-[^6]: [Amazon EKS 네트워킹 요구 사항](https://docs.aws.amazon.com/ko_kr/eks/latest/userguide/network-reqs.html)
-[^7]: [Amazon EKS 프라이빗 VPC 요구 사항](https://docs.aws.amazon.com/ko_kr/eks/latest/userguide/private-clusters.html)
-[^8]: [Amazon EKS Kubernetes 릴리스 일정](https://docs.aws.amazon.com/ko_kr/eks/latest/userguide/kubernetes-versions.html#kubernetes-release-calendar)
+[^1]: [Amazon EKS Kubernetes 릴리스 일정](https://docs.aws.amazon.com/ko_kr/eks/latest/userguide/kubernetes-versions.html#kubernetes-release-calendar)
+[^2]: [Kubernetes 버전 차이 정책](https://github.com/kubernetes/kubernetes/tree/master/CHANGELOG)
+[^3]: [Kubernetes 변경 내역](https://github.com/kubernetes/kubernetes/tree/master/CHANGELOG)
+[^4]: [Amazon EKS 컨트럴 플레인 로깅](https://docs.aws.amazon.com/ko_kr/eks/latest/userguide/control-plane-logs.html)
+[^5]: [Amazon EKS 변경 내역](https://docs.aws.amazon.com/ko_kr/eks/latest/userguide/kubernetes-versions-standard.html)
+[^6]: [Amazon EKS 추가 기능](https://docs.aws.amazon.com/ko_kr/eks/latest/userguide/eks-add-ons.html)
+[^7]: [Amazon EKS 네트워킹 요구 사항](https://docs.aws.amazon.com/ko_kr/eks/latest/userguide/network-reqs.html)
+[^8]: [Amazon EKS 프라이빗 VPC 요구 사항](https://docs.aws.amazon.com/ko_kr/eks/latest/userguide/private-clusters.html)

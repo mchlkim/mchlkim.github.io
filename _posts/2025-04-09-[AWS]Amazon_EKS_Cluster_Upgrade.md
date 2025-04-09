@@ -1,5 +1,5 @@
 ---
-title: Amazon EKS Cluster 업그레이드
+title: Amazon EKS Cluster Kubernetes 업그레이드
 date: 2025-04-09 12:00:00 +0900
 categories: [AWS, Container, EKS]
 tags: [Container, Kubernetes, k8s, Amazon EKS, EKS, Upgrade]
@@ -7,7 +7,7 @@ tags: [Container, Kubernetes, k8s, Amazon EKS, EKS, Upgrade]
 
 ## 개요
 
-Kubernetes는 평균 4개월에 한 번씩 새로운 마이너 버전을 릴리스하고 Amazon EKS는 이러한 마이너 버전의 업스트림 릴리스 및 지원 중단 주기를 따른다.
+Kubernetes는 평균 4개월에 한 번씩 새로운 마이너 버전을 릴리스[^8]하고 Amazon EKS는 이러한 마이너 버전의 업스트림 릴리스 및 지원 중단 주기를 따른다.
 이로 인해 마이너 버전 릴리스 후 14개월 동안 Amazon EKS의 표준 지원이 제공되고 이후 12개월 동안은 확장 지원으로 전환된다. 확장 지원 기간에는 클러스터 시간당 추가 비용을 지불해야 한다.
 물론 확장 지원 여부를 설정할 수는 있지만, 기본적으로 활성화되어 있으며 확장 지원도 12개월 동안만 지원되기 때문에 업그레이드 작업은 피할 수 없다.
 
@@ -106,3 +106,4 @@ AWS에서 제공하는 추가 기능에서는 대부분 업데이트 버전 정�
 [^5]: [Amazon EKS 추가 기능](https://docs.aws.amazon.com/ko_kr/eks/latest/userguide/eks-add-ons.html)
 [^6]: [Amazon EKS 네트워킹 요구 사항](https://docs.aws.amazon.com/ko_kr/eks/latest/userguide/network-reqs.html)
 [^7]: [Amazon EKS 프라이빗 VPC 요구 사항](https://docs.aws.amazon.com/ko_kr/eks/latest/userguide/private-clusters.html)
+[^8]: [Amazon EKS Kubernetes 릴리스 일정](https://docs.aws.amazon.com/ko_kr/eks/latest/userguide/kubernetes-versions.html#kubernetes-release-calendar)

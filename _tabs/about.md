@@ -20,7 +20,7 @@ order: 4
 
 # Languages
 
-[![My Skills](https://skillicons.dev/icons?i=python,nodejs,java)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=html,css,js,python,nodejs,java)](https://skillicons.dev)
 
 # Frameworks
 
@@ -28,7 +28,7 @@ order: 4
 
 # Databases
 
-[![My Skills](https://skillicons.dev/icons?i=mysql,postgres,sqlite)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=mysql,postgres,dynamodb,sqlite)](https://skillicons.dev)
 
 # Tools
 

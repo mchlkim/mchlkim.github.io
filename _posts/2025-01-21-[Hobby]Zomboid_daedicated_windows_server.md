@@ -17,6 +17,15 @@ SteamCMD는 Steam 서버를 관리하는 명령줄 도구이다.
 
 [SteamCMD 다운로드](https://steamcdn-a.akamaihd.net/client/installer/steamcmd.zip)[^1]
 
+## 좀보이드 서버 요구 사항
+
+##### 포트
+
+| 프로토콜 | 포트  |
+| -------- | ----- |
+| UDP      | 16261 |
+| UDP      | 16262 |
+
 ### 좀보이드 서버 파일 다운로드
 
 C드라이브에 새 폴더 생성 후 이름 `SteamCMD`로 수정

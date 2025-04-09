@@ -36,9 +36,10 @@ SteamCMD 폴더 내에 `install.bat` 파일 생성
 
 `우클릭 - 편집`을 눌러 파일 내용을 다음과 같이 작성한다.
 
-```install.bat
+```bat
 steamcmd.exe +login anonymous +app_update 380870 +quit
 ```
+{: file='install.bat'}
 
 install.bat을 클릭하여 실행하면 좀보이드 서버 파일이 다운로드 된다.
 위의 파라미터에서 380870은 Steam App ID이다.
@@ -58,7 +59,6 @@ install.bat을 클릭하여 실행하면 좀보이드 서버 파일이 다운로
 -Xms12g -Xmx12g
 ...
 ```
-
 {: file='install.bat'}
 
 `StartServer64.bat`을 클릭하여 실행하면 좀보이드 서버가 구동된다.
@@ -101,7 +101,6 @@ install.bat을 클릭하여 실행하면 좀보이드 서버 파일이 다운로
 # 위에서 확인한 공인 아이피 주소를 입력
 server_browser_announced_ip=<public_ip>
 ```
-
 {: file='server.ini'}
 
 위와 같이 설정하게 된다면 게임 내에서 접속이 가능하다.

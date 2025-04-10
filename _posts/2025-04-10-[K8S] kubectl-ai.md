@@ -7,7 +7,7 @@ tags: [Container, Kubernetes, k8s, kubectl-ai]
 
 ## 개요
 
-`kubectl-ai`[^1]는 Kubernetes 클러스터 관리를 위한 CLI를 개선하기 위해 설계된 AI 기반 어시스턴트이다.
+`kubectl-ai` [^1]는 Kubernetes 클러스터 관리를 위한 CLI를 개선하기 위해 설계된 AI 기반 어시스턴트이다.
 현재 지원하는 모델은 Google Gemini만 지원하며, 복잡한 Kubenetes 작업을 자연어를 통해 수행할 수 있도록 도와준다.
 
 ---
@@ -112,5 +112,6 @@ Secret 정보나 로그에 포함된 민감한 정보가 마스킹되거나 제�
 
 
 ---
-Ref.
-[^1]: [kubectl-ai](https://github.com/GoogleCloudPlatform/kubectl-ai)
+## Ref.
+
+[^1]: [kubectl-ai] (https://github.com/GoogleCloudPlatform/kubectl-ai)

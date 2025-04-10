@@ -76,6 +76,7 @@ Interactive Shell로 대화형으로 사용할 수 있다.
 kubectl-ai
 ```
 
+---
 
 ### 사용 예제
 #### 예제 1.클러스터에서 실행 중인 전체 디플로이먼트의 정보 조회
@@ -93,6 +94,8 @@ kubectl-ai
 
 #### 예제 5: Secret 값 디코딩된 정보 조회 
 ![img.png](/assets/img/posts/2025-04-10-kubectl-ai/example05.png)
+
+---
 
 ### 사용 후기
 자연어를 통해 내가 요청하는 내용을 정확히 이해하고 실행까지 해준다.

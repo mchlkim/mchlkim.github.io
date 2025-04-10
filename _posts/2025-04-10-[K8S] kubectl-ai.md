@@ -114,4 +114,4 @@ Secret 정보나 로그에 포함된 민감한 정보가 마스킹되거나 제�
 ---
 ## Ref.
 
-[^1]: [kubectl-ai] (https://github.com/GoogleCloudPlatform/kubectl-ai)
+[^1]: [kubectl-ai 공식문서](https://github.com/GoogleCloudPlatform/kubectl-ai)

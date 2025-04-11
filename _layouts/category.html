@@ -13,15 +13,21 @@ layout: page
   </h1>
 
   <ul class="content ps-0">
-    {% for post in page.posts %} {% unless post.categories.size > 1 and
-    post.categories[1] == page.title and post.categories[0] !=
-    page.categories[0] %}
+    {% for post in page.posts %} {% assign show_post = true %} {% if
+    post.categories.size > 1 %} {% for other_post in site.posts %} {% if
+    other_post.url != post.url and other_post.categories.size > 1 %} {% if
+    other_post.categories[1] == post.categories[1] and other_post.categories[0]
+    != post.categories[0] %} {% if post.categories[1] == page.title or
+    other_post.categories[1] == page.title %} {% if post.categories[0] !=
+    page.title and other_post.categories[0] != page.title %} {% assign show_post
+    = false %} {% break %} {% endif %} {% endif %} {% endif %} {% endif %} {%
+    endfor %} {% endif %} {% if show_post %}
     <li class="d-flex justify-content-between px-md-3">
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
       <span class="dash flex-grow-1"></span>
       {% include datetime.html date=post.date class='text-muted small
       text-nowrap' lang=lang %}
     </li>
-    {% endunless %} {% endfor %}
+    {% endif %} {% endfor %}
   </ul>
 </div>

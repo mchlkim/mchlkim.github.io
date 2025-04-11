@@ -13,12 +13,15 @@ layout: page
   </h1>
 
   <ul class="content ps-0">
-    {% for post in page.posts %}
-      <li class="d-flex justify-content-between px-md-3">
-        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        <span class="dash flex-grow-1"></span>
-        {% include datetime.html date=post.date class='text-muted small text-nowrap' lang=lang %}
-      </li>
-    {% endfor %}
+    {% for post in page.posts %} {% unless post.categories.size > 1 and
+    post.categories[1] == page.title and post.categories[0] !=
+    page.categories[0] %}
+    <li class="d-flex justify-content-between px-md-3">
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <span class="dash flex-grow-1"></span>
+      {% include datetime.html date=post.date class='text-muted small
+      text-nowrap' lang=lang %}
+    </li>
+    {% endunless %} {% endfor %}
   </ul>
 </div>

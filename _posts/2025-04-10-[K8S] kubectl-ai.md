@@ -1,7 +1,7 @@
 ---
 title: kubectl-ai
 date: 2025-04-10 12:00:00 +0900
-categories: [Container, kubernetes]
+categories: [Infra, Container, kubernetes]
 tags: [Container, Kubernetes, k8s, kubectl-ai]
 ---
 

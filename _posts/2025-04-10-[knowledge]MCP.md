@@ -1,7 +1,7 @@
 ---
 title: MCP란 무엇인가?
 date: 2025-04-10 12:00:00 +0900
-categories: [knowledege]
+categories: [knowledege, summary]
 tags: [Container, Kubernetes, k8s, kubectl-ai]
 ---
 

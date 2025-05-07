@@ -8,7 +8,7 @@ tags: [OpenAI, Windsurf, 인수, AI코딩]
 ## 출처
 
 **Bloomberg (2025-05-06)**  
-[기사 원문](http://bloomberg.com/news/articles/2025-05-06/openai-reaches-agreement-to-buy-startup-windsurf-for-3-billion)
+[기사 원문](https://bloomberg.com/news/articles/2025-05-06/openai-reaches-agreement-to-buy-startup-windsurf-for-3-billion)
 
 ---
 
